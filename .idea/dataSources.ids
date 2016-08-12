@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - student@localhost" uuid="0970df3f-ed97-46ea-a755-025a48944015">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="student"/>
+      <table id="2" parent="1" name="course_tbl"/>
+      <table id="3" parent="1" name="stu_tbl"/>
+      <table id="4" parent="1" name="stucourse_tbl"/>
+      <column id="5" parent="2" name="course_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="6" parent="2" name="course_name">
+        <mandatory>1</mandatory>
+        <data-type>char(20)</data-type>
+      </column>
+      <key id="7" parent="2" name="PRIMARY">
+        <columns>course_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="8" parent="3" name="stu_sno">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="9" parent="3" name="stu_name">
+        <data-type>char(10)</data-type>
+      </column>
+      <key id="10" parent="3" name="PRIMARY">
+        <columns>stu_sno</columns>
+        <primary>1</primary>
+      </key>
+      <column id="11" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="4" name="stu_sno">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="13" parent="4" name="course_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <key id="14" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
